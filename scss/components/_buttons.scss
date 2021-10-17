@@ -1,0 +1,25 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: $br;
+}
+
+@each $btn, $color in $btns {
+      .#{$btn}{
+        background-color: $color;
+        
+        &:hover {
+          background-color:lighten($color, 15%); 
+          transition: background-color 0.2s ease-in;
+        }
+      }      
+}
+  

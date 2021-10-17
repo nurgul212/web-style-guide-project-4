@@ -1,0 +1,30 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+// Nested navigation
+.nav {
+    padding-left: 0;
+    flex-basis: 100%;
+    @include flex-column;
+
+    &-link {
+      text-align: center;
+      border-radius: $br;
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      transition: 
+        background-color .2s ease-in-out, 
+        color .2s ease-in-out;
+
+        &:hover {
+          color:$white;
+          background-color: $teal;
+        }
+    }
+
+  }
+  
+
+  

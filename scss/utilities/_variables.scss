@@ -1,0 +1,46 @@
+// ======================================
+//  Variables
+// ======================================
+
+//Font-family
+$font-stack-primary: 'Lato', sans-serif;
+
+// All colors that used for navigation and typography
+$white: #fff;
+$blue:  #0000ff;
+$teal:  #58e1c1;
+$gray:  #777;
+$turquoise: #58e1c1;
+$turquoise_blue: #51ddfc;
+
+//Border radius (br)
+$br: 5px;
+
+//Buttons color
+$btns: (
+    'default':#51ddfc,
+    'success':#63cc82,
+    'error':#e4757a,
+    'warning':#fd7856,
+    'info':#927bc1,    
+);
+
+// Theme colors
+$themes: (
+    '3': #deb2ee,
+    '4': #7ee6fd,
+    '5': #88d9a0,
+    '6': #4da2bb,
+    '7': #ec9fa3,
+    '8': #fd9f85,
+   '12': #80e8d1,
+);
+
+//Media quary breakpoints
+$breakpoints: (
+    'min': 768px,
+    'max': 1400px,
+);
+
+
+
