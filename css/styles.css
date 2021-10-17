@@ -53,7 +53,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -91,7 +90,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -239,7 +237,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -274,7 +271,6 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -356,7 +352,6 @@ template {
 * {
   font-family: "Lato", sans-serif;
   color: #777;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -415,50 +410,40 @@ a {
 .default {
   background-color: #51ddfc;
 }
-
 .default:hover {
   background-color: #9cecfd;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .success {
   background-color: #63cc82;
 }
-
 .success:hover {
   background-color: #9ddfb0;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .error {
   background-color: #e4757a;
 }
-
 .error:hover {
   background-color: #f1b5b8;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .warning {
   background-color: #fd7856;
 }
-
 .warning:hover {
   background-color: #feb4a2;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .info {
   background-color: #927bc1;
 }
-
 .info:hover {
   background-color: #bdafd9;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
@@ -494,27 +479,18 @@ a {
 /* ============================================= */
 .nav {
   padding-left: 0;
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
   display: block;
   width: 100%;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -556,19 +532,13 @@ a {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 1em 10px;
 }
 
 [class^=col] {
   margin-top: 10px;
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
@@ -578,82 +548,67 @@ a {
 .theme.col-3 {
   background-color: #deb2ee;
 }
-
 .theme.col-3:hover {
   color: #fff;
   background-color: #a835d2;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-4 {
   background-color: #7ee6fd;
 }
-
 .theme.col-4:hover {
   color: #fff;
   background-color: #03b7df;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-5 {
   background-color: #88d9a0;
 }
-
 .theme.col-5:hover {
   color: #fff;
   background-color: #30984f;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-6 {
   background-color: #4da2bb;
 }
-
 .theme.col-6:hover {
   color: #fff;
   background-color: #1f4550;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-7 {
   background-color: #ec9fa3;
 }
-
 .theme.col-7:hover {
   color: #fff;
   background-color: #ca2830;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-8 {
   background-color: #fd9f85;
 }
-
 .theme.col-8:hover {
   color: #fff;
   background-color: #e53504;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .theme.col-12 {
   background-color: #80e8d1;
 }
-
 .theme.col-12:hover {
   color: #fff;
   background-color: #20af90;
-  -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
 .card {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 
@@ -675,22 +630,13 @@ a {
   }
 
   .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
 
   [class^=col] {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -699,80 +645,59 @@ a {
   }
 
   .col-1 {
-    -ms-flex-preferred-size: 8.33%;
     flex-basis: 8.33%;
   }
 
   .col-2 {
-    -ms-flex-preferred-size: 16.66%;
     flex-basis: 16.66%;
   }
 
   .col-3 {
-    -ms-flex-preferred-size: 24.99%;
     flex-basis: 24.99%;
   }
 
   .col-4 {
-    -ms-flex-preferred-size: 33.32%;
     flex-basis: 33.32%;
   }
 
   .col-5 {
-    -ms-flex-preferred-size: 41.65%;
     flex-basis: 41.65%;
   }
 
   .col-6 {
-    -ms-flex-preferred-size: 49.98%;
     flex-basis: 49.98%;
   }
 
   .col-7 {
-    -ms-flex-preferred-size: 58.31%;
     flex-basis: 58.31%;
   }
 
   .col-8 {
-    -ms-flex-preferred-size: 66.64%;
     flex-basis: 66.64%;
   }
 
   .col-9 {
-    -ms-flex-preferred-size: 74.97%;
     flex-basis: 74.97%;
   }
 
   .col-10 {
-    -ms-flex-preferred-size: 83.3%;
     flex-basis: 83.3%;
   }
 
   .col-11 {
-    -ms-flex-preferred-size: 91.63%;
     flex-basis: 91.63%;
   }
 
   .col-12 {
-    -ms-flex-preferred-size: 99.96%;
     flex-basis: 99.96%;
   }
 
   .nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
-
   .nav-link {
-    -ms-flex-preferred-size: 100px;
     flex-basis: 100px;
   }
 
@@ -789,6 +714,5 @@ a {
     margin-right: initial;
   }
 }
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
